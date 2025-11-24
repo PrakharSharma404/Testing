@@ -234,4 +234,47 @@ class NotificationServiceTest {
         assertTrue(notificationService.isChatValid("Type", 1L, "Auth"));
         assertTrue(notificationService.isConsentRequestValid(1L, "Auth"));
     }
+
+    // ==========================================
+    // 6. Tests for Delete Methods (ADDED TO FIX MUTATION SURVIVORS)
+    // ==========================================
+
+    @Test
+    void testDeleteChatNotification() {
+        User user = new User();
+        String result = notificationService.deleteChatNotificationOfRecipient(1L, user);
+        assertEquals("Not implemented yet", result);
+    }
+
+    @Test
+    void testDeleteConsentRequestNotification() {
+        User user = new User();
+        String result = notificationService.deleteConsentRequestNotificationOfRecipient(1L, user);
+        assertEquals("Not implemented yet", result);
+    }
+
+    @Test
+    void testDeleteOneWayNotification() {
+        User user = new User();
+        String result = notificationService.deleteOneWayNotificationOfRecipient(1L, user);
+        assertEquals("Not implemented yet", result);
+    }
+
+    @Test
+    void testDeleteAllChatNotifications() {
+        String result = notificationService.deleteAllChatNotificationsOfRecipient("PATIENT", 1L);
+        assertEquals("Not implemented yet", result);
+    }
+
+    @Test
+    void testDeleteAllConsentRequestNotifications() {
+        String result = notificationService.deleteAllConsentRequestNotificationsOfRecipient("DOCTOR", 1L);
+        assertEquals("Not implemented yet", result);
+    }
+
+    @Test
+    void testDeleteAllOneWayNotifications() {
+        String result = notificationService.deleteAllOneWayNotificationsOfRecipient("ADMIN", 1L);
+        assertEquals("Not implemented yet", result);
+    }
 }

@@ -78,10 +78,10 @@
                 </dependencies>
                 <configuration>
                     <targetClasses>
-                        <param>RadVeda.*</param>
+                        <param>radveda.*</param>
                     </targetClasses>
                     <targetTests>
-                        <param>RadVeda.*</param>
+                        <param>radveda.*</param>
                     </targetTests>
                     <outputFormats>
                         <param>HTML</param>
